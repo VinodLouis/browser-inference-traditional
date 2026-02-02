@@ -206,4 +206,4 @@ npm run type-check  # Check for TypeScript errors
 
 ## Server Dependency project
 
-https://github.com/VinodLouis/server-inference-traditional/tree/main
+https://github.com/VinodLouis/server-inference-traditional
