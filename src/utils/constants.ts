@@ -1,0 +1,180 @@
+export const MODELS = [
+  { id: 'mobilenetv2', name: 'MobileNetV2', type: 'vision' },
+  { id: 'resnet20', name: 'ResNet20', type: 'vision' },
+  { id: 'distilbert', name: 'DistilBERT', type: 'nlp' },
+];
+
+export const OPTIMIZATIONS = [
+  { id: 'none', name: 'No Optimization' },
+  { id: 'webgl', name: 'WebGL' },
+  { id: 'webgpu', name: 'WebGPU' },
+  { id: 'wasm_simd', name: 'WASM SIMD' },
+  { id: 'webnn', name: 'WebNN' },
+];
+
+export const SAMPLE_COUNTS = [10, 25, 50, 100];
+
+export const COLORS = {
+  primary: '#0ea5e9',
+  secondary: '#64748b',
+  success: '#10b981',
+  warning: '#f59e0b',
+  danger: '#ef4444',
+};
+
+export const METRICS_CONFIG = [
+  {
+    category: 'Accuracy',
+    metric: 'Precision',
+    unit: '0-1',
+    key: 'precision',
+    interpretation: '% of positive predictions correct',
+  },
+  {
+    category: 'Accuracy',
+    metric: 'Recall',
+    unit: '0-1',
+    key: 'recall',
+    interpretation: '% of positive samples found',
+  },
+  {
+    category: 'Accuracy',
+    metric: 'F1-Score',
+    unit: '0-1',
+    key: 'f1Score',
+    interpretation: 'Balanced precision & recall',
+  },
+  {
+    category: 'Accuracy',
+    metric: 'ROC-AUC',
+    unit: '0-1',
+    key: 'rocAuc',
+    interpretation: 'Ranking quality',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Avg latency',
+    unit: 'ms',
+    key: 'avgLatency',
+    interpretation: 'Mean inference time',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Min latency',
+    unit: 'ms',
+    key: 'minLatency',
+    interpretation: 'Minimum latency',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Max latency',
+    unit: 'ms',
+    key: 'maxLatency',
+    interpretation: 'Maximum latency',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Median latency',
+    unit: 'ms',
+    key: 'medianLatency',
+    interpretation: '50th percentile',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'P95 latency',
+    unit: 'ms',
+    key: 'p95Latency',
+    interpretation: '95th percentile',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'P99 latency',
+    unit: 'ms',
+    key: 'p99Latency',
+    interpretation: '99th percentile',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Std dev',
+    unit: 'ms',
+    key: 'stdDev',
+    interpretation: 'Latency variability',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Cold latency',
+    unit: 'ms',
+    key: 'coldLatency',
+    interpretation: 'First inference',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Warm latency',
+    unit: 'ms',
+    key: 'warmLatency',
+    interpretation: 'Steady state',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Throughput',
+    unit: 'samples/s',
+    key: 'throughput',
+    interpretation: 'Capacity',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Avg memory',
+    unit: 'MB',
+    key: 'avgMemory',
+    interpretation: 'Memory footprint',
+  },
+  {
+    category: 'Efficiency',
+    metric: 'Peak memory',
+    unit: 'MB',
+    key: 'peakMemory',
+    interpretation: 'Peak memory usage',
+  },
+  {
+    category: 'UX',
+    metric: 'End-to-end latency',
+    unit: 'ms',
+    key: 'endToEndLatency',
+    interpretation: 'User-perceived total time',
+  },
+  {
+    category: 'UX',
+    metric: 'Time-to-first',
+    unit: 'ms',
+    key: 'timeToFirst',
+    interpretation: 'Cold-start perception',
+  },
+  {
+    category: 'UX',
+    metric: 'Jitter',
+    unit: 'ms',
+    key: 'jitter',
+    interpretation: 'Latency variability',
+  },
+  {
+    category: 'Network',
+    metric: 'RTT',
+    unit: 'ms',
+    key: 'rtt',
+    interpretation: 'Round-trip time (server only)',
+  },
+  {
+    category: 'Metadata',
+    metric: 'Platform',
+    unit: 'string',
+    key: 'platform',
+    interpretation: 'OS/hardware',
+  },
+  {
+    category: 'Metadata',
+    metric: 'Success Rate',
+    unit: '%',
+    key: 'successRate',
+    interpretation: 'Successful inferences',
+  },
+];

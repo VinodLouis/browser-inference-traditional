@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+public/data/cifar10/data/
+public/models/distilbert_ag_news.onnx
+public/models/mobilenetv2_x1_0.onnx
+public/models/resnet20.onnx
+public/models/local-tokenizer-agnews/special_tokens_map.json
+public/models/local-tokenizer-agnews/tokenizer_config.json
+public/models/local-tokenizer-agnews/tokenizer.json
+public/models/local-tokenizer-agnews/vocab.txt
