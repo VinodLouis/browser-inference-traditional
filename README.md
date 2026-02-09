@@ -204,6 +204,10 @@ The server benchmark expects:
 npm run type-check  # Check for TypeScript errors
 ```
 
+## Result
+
+![Result](./image-ss/metrics.png)
+
 ## Server Dependency project
 
 https://github.com/VinodLouis/server-inference-traditional
